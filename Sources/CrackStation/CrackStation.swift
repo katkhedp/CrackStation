@@ -1,3 +1,5 @@
+import Foundation
+
 public protocol Decrypter {
     init()
 
@@ -14,7 +16,7 @@ public struct CrackStation: Decrypter {
     public init() {
     }
     
-    static func loadDictionaryFromDisk() throws -> [String : String] {
+    func loadDictionaryFromDisk() throws -> [String : String] {
         guard let path = Bundle.module.url(forResource: "data", withExtension: "json") else { return [:] }
 
         let data = try Data(contentsOf: path)

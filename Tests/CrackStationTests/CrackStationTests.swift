@@ -1,9 +1,9 @@
 import XCTest
-@testable import Crack_Station_v1
+@testable import CrackStation
 
-final class Crack_Station_v1Tests: XCTestCase {
+final class CrackStationTests: XCTestCase {
     func testExample() throws {
-        let crack_station = Crack_Station_v1()
+        let crack_station = CrackStation()
         let lookupTable = try crack_station.loadDictionaryFromDisk()
         
     }
