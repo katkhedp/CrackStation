@@ -13,9 +13,11 @@ This library is solely published to serve educational purposes and understand th
 Once you have your Swift package set up, add CrackStation to the list of dependencies in your Package.swift file:
 
 ''''
+
 dependencies: [
     .package(url: "https://github.com/katkhedp/CrackStation", .upToNextmajor(from: "2.1.1"))
 ]
+
 ''''
 
 
