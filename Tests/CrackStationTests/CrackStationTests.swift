@@ -2,10 +2,9 @@ import XCTest
 @testable import CrackStation
 
 final class CrackStationTests: XCTestCase {
-    func testMVPsha1_3() throws {
-
-        let inputhash = "e1e154e5261dc0011fd40e84d2cad1566e9ccfe3"
+    func test_example() throws {
+        let inputHash = "d9f0509fb7e8bd7d4c4b627dfec70c0c0e01fb34"
         let decrypted = CrackStation().decrypt(shaHash: inputhash) ?? nil
-        XCTAssertEqual(decrypted, "a!A")
+        XCTAssertEqual(decrypted, "cba")
     }
 }
