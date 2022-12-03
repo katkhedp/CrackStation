@@ -5,7 +5,7 @@ public protocol Decrypter {
 }
 public struct CrackStation: Decrypter {
     var lookupTable: Dictionary <String,String> = [:]
-    private init() {
+    public init() {
         do{
             guard let path = Bundle.module.url(forResource: "data", withExtension: "json") else {return}
             let data = try Data(contentsOf: path)
@@ -15,7 +15,7 @@ public struct CrackStation: Decrypter {
                 print("unable to load from dictionary")
         }
     }
-    private func decrypt(shaHash: String) -> String? {
+    public func decrypt(shaHash: String) -> String? {
         let decryptedPassword = lookupTable[shaHash]
         return decryptedPassword
     }  
