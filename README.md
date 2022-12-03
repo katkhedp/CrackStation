@@ -10,13 +10,14 @@ The objective of this library is to spread awareness for the people to know how 
 This library is solely published to serve educational purposes and understand the working of SHA1 and SHA256 with encorparting software engineering standards during the process of development. However, any usage beyond learning is not intended like executing hacking, or trying to crack unauthorized passwords.
 
 ## Installation
-### Swift Package Manager
+
+## Swift Package Manager
 The [Swift Package Manager](https://www.swift.org/package-manager/) is "a tool for managing the distribution of Swift code. It's integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies." <p></p>
 Once you have your Swift package set up, add Crackstation to the list of dependencies in your `Package.swift` file:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/katkhedp/CrackStation", .upToNextmajor(from: "2.1.4"))
+    .package(url: "https://github.com/katkhedp/CrackStation", .upToNextmajor(from: "2.1.5"))
 ]
 ```
 
@@ -28,6 +29,7 @@ The cracstation implementation contanins two function init() and decrypt(). Thei
 
 2) `decrypt()` -> This function accepts a parameter which is a encrypted hash string and returns decrypted password
 
+### Example
 
 
 ```swift
@@ -47,11 +49,10 @@ final class CrackStationTests: XCTestCase {
 
 ```
 
-### Example
 
 
 # Stable release
-- The latest stable release for the applciation is "2.1.4".
+- The latest stable release for the applciation is "2.1.5".
 
 # Author
 - The project is developed and uploaded by Pushpak Vijay Katkhede
